@@ -21,3 +21,22 @@
   \end{center}
 \end{titlepage}
 
+% References Page Setup
+\renewcommand\bibname{References}
+
+% Custom Commands
+\newcommand{\makeaparahraph}[2]{
+  \begin{flushleft}
+    \textbf{#1}#2
+  \end{flushleft}
+}
+
+\newcommand{\makepapersummery}[6]{
+  \makeaparahraph{Category: }{#1}
+  \makeaparahraph{Title: }{#2}
+  \makeaparahraph{Authors: }{#3}
+  \makeaparahraph{Source: }{#4}
+  \makeaparahraph{Abstract: }{#5}
+  \makeaparahraph{Analysis: }{#6}
+  \vspace{2cm}
+}
